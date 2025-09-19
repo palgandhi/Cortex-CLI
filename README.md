@@ -19,26 +19,24 @@ Model Comparison: The all command allows you to automatically train and evaluate
 Flexible Execution: Supports both interactive mode for guidance and a "one-shot" mode for fast, scripted execution.
 
 Installation
-To get started with Cortex, clone the repository and install it using pip. This will make the cortex command available globally on your system.
+To get started with Cortex, you need to download the project and install it using pip. This will make the cortex command available globally on your system.
 
-1. Clone the repository:
+1. Get the project files
+You can either clone the repository using a Git client or download the ZIP file directly from GitHub.
 
-Bash
-git clone https://github.com/your-username/cortex.git
-cd cortex
-2. Install the package:
+2. Open the project folder
+Navigate to the root directory of the project in your terminal. This is the folder that contains the pyproject.toml file.
 
-Bash
+3. Install the package
+Run the following command to install Cortex and all its dependencies.
+
 pip install .
-This command will install Cortex and all its dependencies, including scikit-learn, xgboost, lightgbm, gymnasium, and sentence-transformers.
-
 Usage
 Simply type cortex in your terminal to start the interactive session.
 
 Interactive Mode
 Follow the prompts to guide the CLI through your machine learning task.
 
-Bash
 cortex
 
 # Please enter the path to your dataset: sample_data.csv
@@ -47,12 +45,10 @@ cortex
 One-Shot Mode
 For a fast, non-interactive experience, use the --auto-run flag. This will run the pipeline with the first suggested model and default settings.
 
-Bash
 cortex --auto-run path/to/your/dataset.csv
 Model Comparison
 In interactive mode, you can run all suggested models at once by typing all when prompted.
 
-Bash
 Please select a model by number (1-3) or type 'all' to run all: all
 Models Included
 Cortex comes pre-configured with a powerful set of models, organized by problem type:
