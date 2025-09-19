@@ -1,0 +1,6 @@
+pandas
+spacy
+fuzzywuzzy
+python-Levenshtein
+scikit-learn
+torch
